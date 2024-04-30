@@ -1,9 +1,20 @@
 const App = () => {
-
-  return <h1>IBM React Demo App</h1>;
-  
+  return (
+    <div>
+      <h1>IBM React Demo App</h1>
+      <p>IBM ReactJS Demo Application</p>
+    </div>
+  );
 };
 export default App;
+
+
+// const App = () => {
+
+//   return <h1>IBM React Demo App</h1>;
+  
+// };
+// export default App;
 
 
 // const App = () => {
