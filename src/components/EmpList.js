@@ -21,6 +21,7 @@ const EmpList = () => {
             <> {empList && empList.map(emp =>
                 <p key={emp.id}> {emp.name} </p>
             )} </>
+            <p>Render data in a tabular format. </p>
 
         </>
     );
