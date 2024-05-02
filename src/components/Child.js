@@ -5,9 +5,9 @@ const Child = (props) => {
     const parentDataInChild = props.parentToChild;
     const childData = 'Monu';
 
-    const passDataToParent = () => {
+    const sendDataToParent = () => {
         console.log(childData);
-        // code 
+        props.childToParent(childData);
     };
 
 
@@ -16,7 +16,7 @@ const Child = (props) => {
             <h1>Child component</h1>
             <p>Child data in child component: {childData}</p>
             <p>Parent data in child component: {parentDataInChild}</p>
-            <button onClick={passDataToParent} >Pass Data to Parent</button>
+            <button onClick={sendDataToParent} >Send Data to Parent</button>
         </>
     );
 };
