@@ -1,5 +1,6 @@
 import Employee from "./components/Employee";
 import Login from "./components/Login";
+import Parent from "./components/Parent";
 
 const App = () => {
 
@@ -8,8 +9,9 @@ const App = () => {
       <h1>App component</h1>
       <p>IBM ReactJS Demo Application</p>
       <hr/>
-      <Login />
-      <Employee />
+      {/* <Login /> */}
+      {/* <Employee /> */}
+      <Parent />
     </>
   );
 };

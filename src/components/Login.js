@@ -1,4 +1,11 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+
+// useContext
+// useEffect
+// useNavigate
+// useHistory 
+
+// function == method == hook  
 
 const Login = () => {
 
