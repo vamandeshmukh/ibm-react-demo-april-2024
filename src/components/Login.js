@@ -3,6 +3,7 @@ import { useState } from "react";
 const Login = () => {
 
     const [loginData, setLoginData] = useState({ username: '', password: '' });
+    const [afterLoginMessage, setAfterLoginMessage] = useState('');
 
     const handleLoginInput = (evt) => {
         console.log(evt.target.value);
@@ -16,7 +17,7 @@ const Login = () => {
 
     const handleLoginSubmit = (evt) => {
         evt.preventDefault();
-        alert('Logged in successfully!')
+       
 
     };
 
@@ -25,13 +26,12 @@ const Login = () => {
             <h1>Login Component</h1>
             <p>Login here</p>
             <form onSubmit={handleLoginSubmit}>
-                <input type="text" name="username" value={loginData.firstName} onChange={handleLoginInput} />
+                <input type="text" name="username" value={loginData.username} onChange={handleLoginInput} />
                 <input type="password" name="password" value={loginData.password} onChange={handleLoginInput} />
                 <input type="submit" value="Login" />
             </form>
             <>
-                <p>username that you are entering: {loginData.username} </p>
-                <p>password that you are entering: {loginData.password}</p>
+                <p>{afterLoginMessage && afterLoginMessage} </p>
             </>
         </>
     );
