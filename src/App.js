@@ -1,17 +1,33 @@
+import Employee from "./components/Employee";
 
-class App {
+const App = () => {
 
-  render = () => {
-    return (
+  return (
     <>
-      <h1>IBM React Demo App</h1>
+      <h1>App component</h1>
       <p>IBM ReactJS Demo Application</p>
+      <hr/>
+      <Employee />
     </>
-);
-  };
+  );
+};
 
-}
 export default App;
+
+// import { Component } from 'react';
+
+// class App extends Component {
+
+//   render = () => {
+//     return (
+//     <>
+//       <h1>IBM React Demo App</h1>
+//       <p>IBM ReactJS Demo Application</p>
+//     </>
+// );
+//   };
+// }
+// export default App;
 
 // const App = () => {
 //   return (
