@@ -13,12 +13,18 @@ const Login = () => {
         });
     };
 
-    // sonu sonu 
-
     const handleLoginSubmit = (evt) => {
+        if (loginData.username === 'sonu' && loginData.password === 'sonu') {
+            setAfterLoginMessage(`Hi ${loginData.username}! You've logged in successfully!`);
+            alert(`Hi ${loginData.username}! You've logged in successfully!`);
+            setLoginData({ username: '', password: '' });
+        }
+        else {
+            setAfterLoginMessage(`Invalid credentials!`);
+            alert(`Invalid credentials!`);
+            setLoginData({ username: '', password: '' });
+        }
         evt.preventDefault();
-       
-
     };
 
     return (
