@@ -10,7 +10,7 @@ const EmpList = () => {
         console.log('useEffect');
         axios.get('https://jsonplaceholder.typicode.com/users')
             .then((resp) => {
-                console.log(resp);
+                console.log(resp.data);
                 setEmpList(resp.data);
             })
     }, []);
@@ -18,9 +18,9 @@ const EmpList = () => {
     return (
         <>
             <h1>EmpList Component</h1>
-            <p> {empList && empList.forEach(element => {
-                <p> {element.username} </p>
-            })} </p>
+            <> {empList && empList.map(emp =>
+                <p key={emp.id}> {emp.name} </p>
+            )} </>
 
         </>
     );
