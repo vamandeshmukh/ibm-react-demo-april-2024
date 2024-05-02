@@ -2,13 +2,13 @@ import { useState } from "react";
 
 const Employee = () => {
 
-    // let firstName = ''; // not working 
+    // let firstName = ''; // does not work  
     const [firstName, setFirstName] = useState(''); // works 
 
     const handleNameInput = (evt) => {
         console.log(evt.target.name);
         console.log(evt.target.value);
-        // firstName = evt.target.value; // not working 
+        // firstName = evt.target.value; // does not work  
         setFirstName(evt.target.value); // works 
     };
 

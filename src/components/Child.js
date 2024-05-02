@@ -1,5 +1,3 @@
-
-
 const Child = (props) => {
 
     const parentDataInChild = props.parentToChild;
@@ -9,7 +7,6 @@ const Child = (props) => {
         console.log(childData);
         props.childToParent(childData);
     };
-
 
     return (
         <>

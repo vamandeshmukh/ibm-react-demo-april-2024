@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useState } from "react";
 
 // useContext
 // useEffect
@@ -13,9 +13,10 @@ const Login = () => {
     const [afterLoginMessage, setAfterLoginMessage] = useState('');
 
     const handleLoginInput = (evt) => {
+        console.log(evt.target.name);
         console.log(evt.target.value);
         setLoginData({
-            ...loginData,
+            ...loginData, // V a
             [evt.target.name]: evt.target.value
         });
     };

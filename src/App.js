@@ -1,22 +1,39 @@
-import Employee from "./components/Employee";
-import Login from "./components/Login";
-import Parent from "./components/Parent";
+import AppRoutes from "./components/AppRoutes";
 
 const App = () => {
 
   return (
     <>
-      <h1>App component</h1>
+      <h1>App Component</h1>
       <p>IBM ReactJS Demo Application</p>
       <hr/>
-      {/* <Login /> */}
-      {/* <Employee /> */}
-      <Parent />
+      <AppRoutes />
     </>
   );
 };
 
 export default App;
+
+
+// import Employee from "./components/Employee";
+// import Login from "./components/Login";
+// import Parent from "./components/Parent";
+
+// const App = () => {
+
+//   return (
+//     <>
+//       <h1>App component</h1>
+//       <p>IBM ReactJS Demo Application</p>
+//       <hr/>
+//       <Login />
+//       <Employee />
+//       <Parent />
+//     </>
+//   );
+// };
+
+// export default App;
 
 // import { Component } from 'react';
 
