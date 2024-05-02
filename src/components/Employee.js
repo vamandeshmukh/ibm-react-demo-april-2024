@@ -1,29 +1,46 @@
-import { useState } from "react";
+import EmpList from "./EmpList";
 
 const Employee = () => {
 
-    // let firstName = ''; // does not work  
-    const [firstName, setFirstName] = useState(''); // works 
-
-    const handleNameInput = (evt) => {
-        console.log(evt.target.name);
-        console.log(evt.target.value);
-        // firstName = evt.target.value; // does not work  
-        setFirstName(evt.target.value); // works 
-    };
 
     return (
         <>
             <h1>Employee Component</h1>
-            <p>Employee name is {firstName}.</p>
-            <form>
-                <input type="text" name="firstName" value={firstName} onChange={handleNameInput} />
-            </form>
+            <EmpList />
+
         </>
     );
 };
 
 export default Employee;
+
+
+// import { useState } from "react";
+
+// const Employee = () => {
+
+//     // let firstName = ''; // does not work
+//     const [firstName, setFirstName] = useState(''); // works
+
+//     const handleNameInput = (evt) => {
+//         console.log(evt.target.name);
+//         console.log(evt.target.value);
+//         // firstName = evt.target.value; // does not work
+//         setFirstName(evt.target.value); // works
+//     };
+
+//     return (
+//         <>
+//             <h1>Employee Component</h1>
+//             <p>Employee name is {firstName}.</p>
+//             <form>
+//                 <input type="text" name="firstName" value={firstName} onChange={handleNameInput} />
+//             </form>
+//         </>
+//     );
+// };
+
+// export default Employee;
 
 // const Employee = () => {
 
