@@ -4,9 +4,6 @@ const App = () => {
 
   return (
     <>
-      <h1>App Component</h1>
-      <p>IBM ReactJS Demo Application</p>
-      <hr/>
       <AppRoutes />
     </>
   );
