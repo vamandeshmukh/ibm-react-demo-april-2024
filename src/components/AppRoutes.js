@@ -13,10 +13,11 @@ const AppRoutes = () => {
             <BrowserRouter>
                 <Menubar />
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
+                    <Route path="home" element={<Home />} />
                     <Route path="emp" element={<Employee />} />
                     <Route path="parent" element={<Parent />} />
                     <Route path="login" element={<Login />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="*" element={<Page404 />} />
                 </Routes>
             </BrowserRouter>
