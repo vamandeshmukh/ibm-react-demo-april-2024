@@ -10,7 +10,6 @@ const Parent = () => {
             <p>Parent data in parent component: 
                 {parentData}</p>
             <Child />
-
         </>
     );
 };
