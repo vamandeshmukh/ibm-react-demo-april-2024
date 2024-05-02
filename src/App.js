@@ -1,13 +1,27 @@
 
-const App = () => {
-  return (
+class App {
+
+  render = () => {
+    return (
     <>
       <h1>IBM React Demo App</h1>
       <p>IBM ReactJS Demo Application</p>
     </>
-  );
-};
+);
+  };
+
+}
 export default App;
+
+// const App = () => {
+//   return (
+//     <>
+//       <h1>IBM React Demo App</h1>
+//       <p>IBM ReactJS Demo Application</p>
+//     </>
+//   );
+// };
+// export default App;
 
 // // with fragments 
 // const App = () => {
