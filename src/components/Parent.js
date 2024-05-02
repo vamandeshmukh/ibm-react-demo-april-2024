@@ -16,7 +16,7 @@ const Parent = () => {
             <h1>Parent component</h1>
             <p>Parent data in parent component:{parentData}</p>
             <p>Child data in parent component:{childDataInParent}</p>
-            <Child parentToChild={parentData} />
+            <Child childToParent={???} parentToChild={parentData} />
         </>
     );
 };
