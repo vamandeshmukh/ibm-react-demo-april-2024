@@ -1,13 +1,34 @@
+
 const App = () => {
   return (
-    <div>
+    <>
       <h1>IBM React Demo App</h1>
       <p>IBM ReactJS Demo Application</p>
-    </div>
+    </>
   );
 };
 export default App;
 
+// // with fragments 
+// const App = () => {
+//   return (
+//     <>
+//       <h1>IBM React Demo App</h1>
+//       <p>IBM ReactJS Demo Application</p>
+//     </>
+//   );
+// };
+// export default App;
+
+// const App = () => {
+//   return (
+//     <div>
+//       <h1>IBM React Demo App</h1>
+//       <p>IBM ReactJS Demo Application</p>
+//     </div>
+//   );
+// };
+// export default App;
 
 // const App = () => {
 
@@ -92,5 +113,4 @@ export default App;
 // }
 
 // export default App;
-
 
