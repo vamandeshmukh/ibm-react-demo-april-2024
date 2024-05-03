@@ -1,3 +1,34 @@
 
+// steps in using redux store - 
 
-const Store = create
+// install libraries 
+// create store 
+// provide store to the app  
+// create slices 
+// send data to store 
+// receive data from store 
+
+import configureStore from "@reduxjs/toolkit";
+
+// const store = configureStore({});
+
+const store = configureStore({
+    reducer: {
+        empObj: EmpReducer
+        // more slices  
+    }
+});
+
+
+export default store;
+
+
+
+// import { configureStore } from "@reduxjs/toolkit";
+
+
+// const Store = configureStore({
+//     reducer: ''
+// });
+
+// export default Store;
