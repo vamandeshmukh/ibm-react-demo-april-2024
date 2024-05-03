@@ -11,20 +11,19 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 import EmpReducer from './EmpSlice';
+import UserReducer from './UserSlice';
 
 // const store = configureStore({});
 
 const store = configureStore({
     reducer: {
-        empObj: EmpReducer
-        // more slices  
+        empObj: EmpReducer,
+        user: UserReducer
+        // more reducers  
     }
 });
 
-
 export default store;
-
-
 
 // import { configureStore } from "@reduxjs/toolkit";
 

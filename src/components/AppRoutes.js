@@ -44,6 +44,7 @@ const AppRoutes = () => {
                     <Menubar />
                     <Routes>
                         <Route path="home" element={<Home />} />
+                        <Route path="emp" element={<Employee />} />
                         <Route path="login" element={<Login setLoginStatus={updateLoginStatus} />} />
                         <Route path="register" element={<Register />} />
                         <Route exact path="/" element={<Home />} />

@@ -1,22 +1,11 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import AddEmployee from "./AddEmployee";
 import EmpList from "./EmpList";
-
+import { setEmpObj } from '../redux/EmpSlice';
 const Employee = () => {
-
-    // const dataFromStore = useSelector(() => { });
-    const dataFromStore = useSelector(store => store.empObj.emp);
-
-    console.log(dataFromStore);
 
     return (
         <>
-            <>
-                <p>Data received from store</p>
-                <p>{dataFromStore &&
-                    <span>{dataFromStore.firstName} {dataFromStore.salary}</span>
-                }  </p>
-            </>
             <h1>Employee Component</h1>
             <AddEmployee />
             <EmpList />

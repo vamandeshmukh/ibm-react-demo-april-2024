@@ -1,12 +1,36 @@
 
 
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { setEmpObj } from "../redux/EmpSlice";
 
 const Home = () => {
 
+    const dispatch = useDispatch();
+    const dataFromStore = useSelector(store => store.empObj);
+
+    const sendDataToStore = () => {
+        const dataToSend = {
+            firstName: 'Siddharth', salary: 13.50
+        };
+        dispatch(setEmpObj(dataToSend));
+    }
+
+
+    console.log(dataFromStore);
     return (
         <>
             <h1>Home Component</h1>
+
+            <>
+                <p>Data received from store</p>
+                <p>{dataFromStore &&
+                    <span>{dataFromStore.firstName} {dataFromStore.salary}</span>
+                }  </p>
+            </>
+            <>
+                <button onClick={sendDataToStore} >Send data to store</button>
+            </>
 
             <p>Login testing</p>
             <Link to={'/home'}>Home</Link>
