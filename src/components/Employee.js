@@ -1,4 +1,4 @@
-import AddEmp from "./AddEmp";
+import AddEmployee from "./AddEmployee";
 import EmpList from "./EmpList";
 
 const Employee = () => {
@@ -6,7 +6,7 @@ const Employee = () => {
     return (
         <>
             <h1>Employee Component</h1>
-            <AddEmp />
+            <AddEmployee />
             <EmpList />
         </>
     );

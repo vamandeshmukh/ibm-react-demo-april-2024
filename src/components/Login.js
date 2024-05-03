@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // useContext
 // useEffect
@@ -11,6 +12,7 @@ const Login = () => {
 
     const [loginData, setLoginData] = useState({ username: '', password: '' });
     const [afterLoginMessage, setAfterLoginMessage] = useState('');
+    const navigate = useNavigate();
 
     const handleLoginInput = (evt) => {
         console.log(evt.target.name);
@@ -24,8 +26,9 @@ const Login = () => {
     const handleLoginSubmit = (evt) => {
         if (loginData.username === 'sonu' && loginData.password === 'sonu') {
             setAfterLoginMessage(`Hi ${loginData.username}! You've logged in successfully!`);
-            alert(`Hi ${loginData.username}! You've logged in successfully!`);
             setLoginData({ username: '', password: '' });
+            alert(`Hi ${loginData.username}! You've logged in successfully!`);
+            navigate('/home');
         }
         else {
             setAfterLoginMessage(`Invalid credentials!`);

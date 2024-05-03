@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 const EmpList = () => {
 
     const [empList, setEmpList] = useState('');
-    // useEffect(() => { }, []);
 
     useEffect(() => {
         console.log('useEffect');
@@ -18,11 +17,21 @@ const EmpList = () => {
     return (
         <>
             <h1>EmpList Component</h1>
-            <> {empList && empList.map(emp =>
-                <p key={emp.id}> {emp.name} </p>
-            )} </>
-            <p>Render data in a tabular format. </p>
-
+            <table>
+                <thead>
+                    <th>Name</th> <th>Username</th> <th>Email</th> <th>City</th>
+                </thead>
+                <tbody>
+                    {empList && empList.map(emp =>
+                        <tr key={emp.id}>
+                            <td >{emp.name} </td>
+                            <td >{emp.username} </td>
+                            <td >{emp.email} </td>
+                            <td >{emp.address.city} </td>
+                        </tr>
+                    )}
+                </tbody>
+            </table>
         </>
     );
 };
