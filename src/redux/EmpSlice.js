@@ -1,20 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
-
+console.log('empSlice');
 const empSlice = createSlice({
-    name: 'empObj',
-    initialState : {  
-        firstName: 'Sonu', salary: 10.50    
+    name: 'emp',
+    initialState : { 
+        empObj: {firstName: 'Sonu', salary: 10.50}  
     },
-    reducers : {
+    reducers : { // more methods 
         setEmpObj : (state, action) => {
-            // console.log(state);
             console.log(action.payload);
             state.empObj = action.payload;
         }
-        // more methods 
     }
 });
-
 export default empSlice.reducer;
 
 export const {setEmpObj} = empSlice.actions;

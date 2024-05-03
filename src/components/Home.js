@@ -1,27 +1,24 @@
-
-
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { setEmpObj } from "../redux/EmpSlice";
+import { useEffect } from "react";
 
 const Home = () => {
-
     const dispatch = useDispatch();
-    const dataFromStore = useSelector(store => store.empObj);
+const dataFromStore = useSelector(store => store.emp.empObj);
+    useEffect(() => { }, [dataFromStore]);
 
     const sendDataToStore = () => {
+        console.log('sendDataToStore');
         const dataToSend = {
             firstName: 'Siddharth', salary: 13.50
         };
         dispatch(setEmpObj(dataToSend));
     }
-
-
     console.log(dataFromStore);
     return (
         <>
             <h1>Home Component</h1>
-
             <>
                 <p>Data received from store</p>
                 <p>{dataFromStore &&

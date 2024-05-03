@@ -1,7 +1,5 @@
-import { useDispatch, useSelector } from "react-redux";
 import AddEmployee from "./AddEmployee";
 import EmpList from "./EmpList";
-import { setEmpObj } from '../redux/EmpSlice';
 const Employee = () => {
 
     return (
