@@ -1,10 +1,19 @@
+import { useStore } from "react-redux";
 import AddEmployee from "./AddEmployee";
 import EmpList from "./EmpList";
 
 const Employee = () => {
 
+    // const dataFromStore = useStore(() => { });
+    // const dataFromStore = useStore((store) => { return store.empObj; });
+    const dataFromStore = useStore(store => store.empObj);
+    console.log(dataFromStore);
     return (
         <>
+            <>
+                <p>Data received from store</p>
+                <p>{dataFromStore && dataFromStore.firstName}  </p>
+            </>
             <h1>Employee Component</h1>
             <AddEmployee />
             <EmpList />

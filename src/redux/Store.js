@@ -8,7 +8,9 @@
 // send data to store 
 // receive data from store 
 
-import configureStore from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+
+import EmpReducer from './EmpSlice';
 
 // const store = configureStore({});
 
