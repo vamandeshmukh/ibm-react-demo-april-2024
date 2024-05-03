@@ -21,8 +21,10 @@ const AppRoutes = () => {
 
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-    // function 
-
+    const setLoginStatus = (status) => {
+        console.log(status);
+        setLoginStatus(status);
+    };
 
     return (
         <>
