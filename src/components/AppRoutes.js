@@ -5,8 +5,24 @@ import Employee from './Employee';
 import Home from "./Home";
 import Page404 from './Page404';
 import Menubar from "./Menubar";
+import { useState } from "react";
 
 const AppRoutes = () => {
+
+    // when logged in = 
+    // logout
+    // others -
+
+    // when not logged in = 
+    // register 
+    // login 
+    // others -
+
+
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    // function 
+
 
     return (
         <>
