@@ -2,7 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const empSlice = createSlice({
     name: 'empObj',
-    initialState : { firstName: 'Sonu', salary: 10.50},
+    initialState : { 
+        emp: {firstName: 'Sonu', salary: 10.50},
+        emp2: {firstName: 'Monu', salary: 12.50}
+    },
     reducers : {
         setEmpObj : (state, action) => {
             console.log(state);
