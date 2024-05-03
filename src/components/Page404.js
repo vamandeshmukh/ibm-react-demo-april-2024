@@ -1,5 +1,5 @@
 
-const Page404 = () => {
+const Page404 = (props) => {
 
     return (
         <>

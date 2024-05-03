@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 // function == method == hook  
 
-const Login = () => {
+const Login = (props) => {
 
     const [loginData, setLoginData] = useState({ username: '', password: '' });
     const [afterLoginMessage, setAfterLoginMessage] = useState('');
