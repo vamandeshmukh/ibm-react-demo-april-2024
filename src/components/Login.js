@@ -1,13 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-// useContext
-// useEffect
-// useNavigate
-// useHistory 
-
-// function == method == hook  
-
 const Login = (props) => {
 
     const [loginData, setLoginData] = useState({ username: '', password: '' });
@@ -18,7 +11,7 @@ const Login = (props) => {
         console.log(evt.target.name);
         console.log(evt.target.value);
         setLoginData({
-            ...loginData, // V a
+            ...loginData,
             [evt.target.name]: evt.target.value
         });
     };
@@ -28,6 +21,7 @@ const Login = (props) => {
             setAfterLoginMessage(`Hi ${loginData.username}! You've logged in successfully!`);
             setLoginData({ username: '', password: '' });
             alert(`Hi ${loginData.username}! You've logged in successfully!`);
+            props.setLoginStatus(true);
             navigate('/home');
         }
         else {
